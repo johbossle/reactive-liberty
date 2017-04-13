@@ -32,7 +32,7 @@
 		<dependency>
 		    <groupId>com.netflix.hystrix</groupId>
 		    <artifactId>hystrix-core</artifactId>
-		    <version>1.5.8</version>
+		    <version>${hystrix.version}</version>
 		    <exclusions>
 	        <exclusion>  <!-- declare the exclusion here -->
 	        	<groupId>io.reactivex</groupId>
@@ -43,7 +43,7 @@
 		<dependency>
 	    <groupId>com.netflix.hystrix</groupId>
 		    <artifactId>hystrix-metrics-event-stream</artifactId>
-	    	<version>1.5.8</version>
+	    	<version>${hystrix.version}</version>
 		</dependency>
 	</dependencies>
 	<build>
@@ -71,4 +71,7 @@
 			</plugin>
 		</plugins>
 	</build>
+	<properties>
+	  <hystrix.version>1.5.10</hystrix.version>
+	</properties>
 </project>
